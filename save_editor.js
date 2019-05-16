@@ -45,7 +45,7 @@ function convertToHex(s) {
         "8": [0x0E, 0x68],
         "9": [0x0E, 0x69],
     };
-    var name = [];
+    var name = [0, 0, 0, 0, 0, 0];
     // Hard limit to 6 since names are 6 characters long
     var len = s.length > 6 ? 6 : s.length;
     for (var i = 0; i < len; i++) {
