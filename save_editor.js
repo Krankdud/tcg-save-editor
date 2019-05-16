@@ -59,7 +59,7 @@ function convertToHex(s) {
 function createSave(name) {
     var base = generateBaseSave();
     for (var i = 0; i < name.length; i++) {
-        base[0xC5FF + i] = name[i];
+        base[0xC5B9 + i] = name[i];
     }
     return base;
 }
