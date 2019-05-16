@@ -47,7 +47,8 @@ function convertToHex(s) {
     };
     var name = [];
     // Hard limit to 6 since names are 6 characters long
-    for (var i = 0; i < 6; i++) {
+    var len = s.length > 6 ? 6 : s.length;
+    for (var i = 0; i < len; i++) {
         var hex = conversionTable[s[i]];
         name[i * 2] = hex[0];
         name[i * 2 + 1] = hex[1];
