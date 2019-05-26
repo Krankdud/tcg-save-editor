@@ -4,11 +4,24 @@
         <meta charset="UTF-8">
         <title>TCG Save Editor</title>
         <script src="save_editor.js?v=1.0.0" type="module"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
-        <h1>TCG Save Editor</h1>
-        <p>Creates a race savestate for BGB with the given name</p>
-        <input id="name" type="text" placeholder="Name" maxlength="6" />
-        <button id="create">Create</button>
+        <div class="container mt-3">
+            <h1>TCG Save Editor</h1>
+            <p>Creates a race savestate for BGB with the given name</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" class="form-control" type="text" maxlength="6" />
+                    <small class="form-text text-muted">Limited to 6 characters</small>
+                </div>
+                <button class="btn btn-primary" id="create">Create</button>
+            </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoI></script>
     </body>
 </html>
