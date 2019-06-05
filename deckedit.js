@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     var deckTotal = 0;
     var cardTemplate = _.template(`
-        <div id="<%= cardId %>" class="row tcg-card">
+        <div id="<%= cardId %>" class="row tcg-card mb-2">
             <div class="col-8">
                 <button id="<%= cardId %>-close" type="button" class="close tcg-close mr-3" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
